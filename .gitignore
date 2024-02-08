@@ -1,0 +1,4 @@
+*.tox
+*.aux
+*.secret
+*.log
