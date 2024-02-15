@@ -1,0 +1,61 @@
+\documentclass[12pt, oneside]{report}
+
+\usepackage[a4paper,width=160mm,left=30mm, top=30mm, bottom=20mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{graphicx}
+
+% Profunditat del índex
+\setcounter{tocdepth}{3}
+
+% Lletra tipus Arial
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+
+\title{Elaboració d'un TDR amb \LaTeX{}}
+
+\author{
+  Otero Mateo, Noé\\
+  \texttt{noe.otero@gmail.com}
+}
+
+\begin{document}
+
+% Portada
+\maketitle
+
+% Índex
+\tableofcontents
+
+% Interlineat 1,5 espais
+\renewcommand{\baselinestretch}{1.5}
+% Espai entre pàragraphs doble que entre línees.
+\setlength{\parskip}{\baselineskip}
+
+% Agraiments (opcional)
+\chapter*{Agraiments}
+% Aquest capítol es no numerat. S'ha d'afegir manualment a l'índex.
+\addcontentsline{toc}{chapter}{Agraiments}
+\input{sections/agraiments}
+
+% Introducció
+\chapter*{Introducció}
+% Aquest capítol es no numerat. S'ha d'afegir manualment a l'índex.
+\addcontentsline{toc}{chapter}{Introducció}
+\input{sections/introduccio}
+
+%------------------------------------------------------------------
+%
+%                        COS DEL TREBALL
+%
+%------------------------------------------------------------------
+\input{sections/cos}
+
+\chapter{Conclusions}
+\input{sections/conclusions}
+
+\chapter{I\lgem ustracions i anexos}
+
+\chapter{Bibliografia}
+
+\end{document}
