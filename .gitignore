@@ -1,4 +1,5 @@
-*.tox
+*.toc
 *.aux
 *.secret
 *.log
+*.pdf
